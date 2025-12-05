@@ -1,0 +1,608 @@
+<!-- File: index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CIEW — Council for IT Engineers Welfare</title>
+  <meta name="description" content="CIEW: National registry, verified identity and career ecosystem for IT engineers in India." />
+  <style>
+    :root{--bg:#2b0202;--card:#3a0a0a;--accent:#d4af37;--muted:#f0dca6;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
+    body{margin:0;background:linear-gradient(180deg,#2b0202 0%, #200101 100%);color:#fff6e6}
+    header{display:flex;align-items:center;justify-content:space-between;padding:20px 28px;background:linear-gradient(90deg,rgba(255,255,255,0.02),transparent);backdrop-filter:blur(6px);border-bottom:1px solid rgba(212,175,55,0.06)}
+    .logo{display:flex;gap:12px;align-items:center}
+    .logo-mark{width:46px;height:46px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#ffcf6b);display:flex;align-items:center;justify-content:center;font-weight:700;color:#3a0a0a}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+    .hero{padding:64px 28px;display:grid;grid-template-columns:1fr 420px;gap:36px;align-items:center}
+    .card{background:var(--card);padding:22px;border-radius:14px;box-shadow:0 6px 30px rgba(0,0,0,0.6)}
+    h1{font-size:34px;margin:0 0 12px;color:var(--accent)}
+    .muted{color:var(--muted);font-size:15px}
+    .cta{display:flex;gap:12px;margin-top:18px}
+    .btn{background:var(--accent);color:#3a0a0a;border:none;padding:12px 14px;border-radius:8px;font-weight:700;cursor:pointer}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    .features{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}
+    .feature{padding:12px;border-radius:10px;background:var(--glass)}
+    .right{padding:24px}
+    .small{font-size:13px;color:var(--muted)}
+    .list{margin:12px 0 0;padding-left:18px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    @media(max-width:880px){.hero{grid-template-columns:1fr;}.right{order:-1}}
+    form input,form select,form textarea{width:100%;padding:10px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.06);color:inherit;margin-bottom:10px}
+    .badge{background:#3a2208;padding:6px 8px;border-radius:999px;color:#fff6e6;font-weight:700;font-size:13px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="logo-mark">C</div>
+      <div>
+        <div style="font-weight:700">CIEW</div>
+        <div class="small">Council for IT Engineers Welfare</div>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="verify.html">Verify</a>
+      <a href="institutes.html">Institutes</a>
+      <a href="membership.html">Memberships</a>
+      <a href="licenses.html">Licenses</a>
+      <a href="join.html">Join / Login</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <div class="card">
+        <h1>National registry, verified profiles & career ecosystem for IT Engineers</h1>
+        <p class="muted">CIEW builds professional identity, verified experience and employability for fresher and experienced IT engineers — from academic credentials to career progression. Join the movement: verification, mentorship, licensure and welfare under one trusted platform.</p>
+        <div class="cta">
+          <a class="btn" href="join.html">Get Verified</a>
+          <a class="btn ghost" href="verify.html">How it Works</a>
+        </div>
+        <div class="features">
+          <div class="feature"><strong>Verified ID</strong><div class="small">10th / 12th / Graduation verification + CIEW professional ID</div></div>
+          <div class="feature"><strong>Career Path</strong><div class="small">Skill assessments, interview readiness and a 90‑day job support ecosystem</div></div>
+          <div class="feature"><strong>Employer API</strong><div class="small">Consent-first BGV for hiring teams and recruiters</div></div>
+          <div class="feature"><strong>Institute Partners</strong><div class="small">Offline verification centers, campus partnerships and partner benefits</div></div>
+        </div>
+      </div>
+
+      <div style="margin-top:14px;" class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center"><div><strong>Register Now</strong><div class="small">Create your free CIEW profile — for fresher and experienced IT engineers</div></div><div class="badge">New</div></div>
+        <form action="#" onsubmit="alert('Demo: registration submitted');return false;">
+          <input placeholder="Full name" required />
+          <input placeholder="Mobile number" required />
+          <input placeholder="Email address" required />
+          <select><option>Choose city</option><option>Lucknow</option><option>Kanpur</option><option>Varanasi</option></select>
+          <button class="btn" type="submit">Create Free Account</button>
+        </form>
+        <div class="small">Or register via the registration form: <a class="link" href="https://forms.gle/GAjeBmT6co1dmKM27">Register</a></div>
+      </div>
+    </div>
+
+    <aside class="right card">
+      <h3 style="margin-top:0">Why CIEW matters</h3>
+      <p class="small">Every major profession has a council — lawyers, doctors, accountants. IT engineers need the same professional identity, verified experience, and welfare support. CIEW combines verification, registry, assessments, placement support and career welfare in one trusted platform.</p>
+
+      <div style="margin-top:18px">
+        <h4 style="margin:0 0 8px">Quick Links</h4>
+        <div class="grid-3 small">
+          <div><a class="link" href="institutes.html">For Institutes</a></div>
+          <div><a class="link" href="verify.html">Verification Flow</a></div>
+          <div><a class="link" href="membership.html">Memberships & Licenses</a></div>
+        </div>
+      </div>
+
+      <div style="margin-top:18px">
+        <h4 style="margin:0 0 8px">Contact</h4>
+        <div class="small">WhatsApp: <a class="link" href="https://chat.whatsapp.com/LzjAqRFLI0oBWcrVgbot8i">Join Community</a></div>
+        <div class="small">Email: contact@ciew.org (placeholder)</div>
+      </div>
+    </aside>
+  </section>
+
+  <footer>
+    <div class="small">© CIEW — Council for IT Engineers Welfare. All rights reserved.</div>
+    <div class="small">Hashtags: #ITEngineers #TechCommunity #DigitalIndia #ProfessionalIdentity</div>
+  </footer>
+</body>
+</html>
+
+
+<!-- File: about.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About CIEW — Mission & Vision</title>
+  <style>
+    body{font-family:Inter, system-ui;background:#200101;color:#fff6e6;margin:0}
+    header{padding:18px 24px;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,0.02)}
+    a{color:#d4af37;text-decoration:none}
+    main{padding:28px;max-width:980px;margin:auto}
+    .card{background:rgba(255,255,255,0.02);padding:20px;border-radius:12px}
+    h1{margin:0 0 8px;color:#d4af37}
+    .muted{color:#f0dca6}
+    .timeline{margin-top:16px}
+    .row{display:flex;gap:12px;margin-top:12px}
+    .col{flex:1}
+    .box{background:#3a0a0a;padding:12px;border-radius:8px}
+  </style>
+</head>
+<body>
+  <header>
+    <div style="font-weight:700">CIEW</div>
+    <nav><a href="index.html">Home</a> • <a href="verify.html">Verify</a> • <a href="institutes.html">Institutes</a> • <a href="membership.html">Memberships</a></nav>
+  </header>
+  <main>
+    <div class="card">
+      <h1>About CIEW</h1>
+      <p class="muted">Council for IT Engineers Welfare (CIEW) is an industry-led initiative to professionalize, verify and support IT engineers across India. We provide a national registry, verified profiles, employability programs, and welfare assistance for fresher and experienced IT engineers at all career stages.</p>
+
+      <h3 style="margin-top:18px">Why CIEW?</h3>
+      <ul>
+        <li>Most professions have councils (BCI, NMC, ICAI). IT engineers need an equivalent professional identity.</li>
+        <li>Companies spend heavily on background checks; a verified central registry saves cost and time while improving hiring accuracy.</li>
+        <li>CIEW protects engineers with verification, governance, welfare and national-level recognition.</li>
+      </ul>
+
+      <div class="timeline">
+        <h3>What we offer</h3>
+        <div class="row">
+          <div class="col box"><strong>Verified Identity</strong><div class="muted">10th/12th/Graduation verification, DigiLocker integration, offline checks and profile consolidation</div></div>
+          <div class="col box"><strong>Employability</strong><div class="muted">Adaptive assessments, interview readiness, recorded interviews and placement coordination</div></div>
+          <div class="col box"><strong>Welfare</strong><div class="muted">Unemployment support, emergency funds, mentoring and community networks</div></div>
+        </div>
+      </div>
+
+      <h3 style="margin-top:18px">Expanded Benefits</h3>
+      <ul>
+        <li>Lifetime CIEW professional ID and QR-enabled verification report</li>
+        <li>Priority access to vetted employers and placement drives</li>
+        <li>Mentorship from senior IT professionals and leadership opportunities</li>
+        <li>Access to scholarships, emergency welfare funds and career counseling</li>
+        <li>Discounted partner services (training, certifications, cloud credits)</li>
+      </ul>
+
+      <h3 style="margin-top:18px">Founding Principles</h3>
+      <ol>
+        <li>Identity first: professional, candidate-centric unique CIEW ID</li>
+        <li>Integrity: multi-layer verification to ensure authenticity</li>
+        <li>Inclusivity: campus-first, institute partners and volunteer contributors</li>
+        <li>Sustainability: membership, assessments, corporate API and partner programs</li>
+      </ol>
+
+    </div>
+  </main>
+</body>
+</html>
+
+
+<!-- File: verify.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Verification Process — CIEW</title>
+  <style>
+    body{font-family:Inter;background:#200101;color:#fff6e6;margin:0}
+    header{padding:12px 20px;display:flex;justify-content:space-between}
+    main{max-width:980px;margin:auto;padding:20px}
+    .step{background:rgba(255,255,255,0.02);padding:18px;border-radius:12px;margin-bottom:12px}
+    h2{margin:6px 0;color:#d4af37}
+    .muted{color:#f0dca6}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    form input,textarea,select{padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit;width:100%;margin-bottom:8px}
+    .btn{background:#d4af37;color:#3a0a0a;display:inline-block;padding:10px 12px;border-radius:8px;border:none}
+  </style>
+</head>
+<body>
+  <header>
+    <div style="font-weight:700">CIEW — Verification</div>
+    <nav><a href="index.html">Home</a> • <a href="about.html">About</a></nav>
+  </header>
+  <main>
+    <h1>Verification Workflow</h1>
+    <p class="muted">CIEW verification is a three-layer process designed to be fraud-proof and scalable for fresher and experienced IT engineers.</p>
+
+    <div class="step">
+      <h2>Step 1 — Basic Registration</h2>
+      <p class="muted">A fresher or experienced IT engineer creates a free CIEW profile. A unique CIEW ID is generated and used for all future verifications.</p>
+    </div>
+
+    <div class="step">
+      <h2>Step 2 — Offline Center: Physical Document Check</h2>
+      <p class="muted">Engineer visits an authorized verification center (local computer institute). Operator checks original documents (10th, 12th, graduation), selfie with documents and uploads scans. Center marks 'Physically Verified'.</p>
+    </div>
+
+    <div class="step">
+      <h2>Step 3 — Online Verification (DigiLocker / Board APIs)</h2>
+      <p class="muted">CIEW attempts automated verification via DigiLocker and board/university APIs. If match found → Auto‑verified.</p>
+    </div>
+
+    <div class="step">
+      <h2>Step 4 — College/School Portal</h2>
+      <p class="muted">If automated verification fails, a verification request is sent to the school/college dashboard. Authorized school admin logs in, sees pending verifications and approves or rejects. Final status is updated.</p>
+    </div>
+
+    <div class="step">
+      <h2>Step 5 — Finalize & Badge</h2>
+      <p class="muted">When the profile has physical + digital + institutional confirmations, the CIEW Verified badge is issued along with a QR-enabled verification report for employers. Companies request access via candidate-consent OTP.</p>
+    </div>
+
+    <h2>Anti-duplication & Identity</h2>
+    <p class="muted">CIEW uses Mobile + Email + DOB (+ optional Aadhaar) as composite key. Duplicate detection runs at upload; OTP verification by candidate locks the profile. Institutes cannot create duplicate IDs.</p>
+
+    <h2>Request Verification</h2>
+    <form onsubmit="alert('Demo: verification requested');return false;">
+      <input placeholder="CIEW ID or Email" required />
+      <select><option>Choose City</option><option>Lucknow</option><option>Kanpur</option></select>
+      <button class="btn">Request Verification</button>
+    </form>
+  </main>
+</body>
+</html>
+
+
+<!-- File: institutes.html -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>Institutes & Partners</title>
+  <style>body{font-family:Inter,system-ui;background:#200101;color:#fff6e6;margin:0}header{padding:14px 20px;display:flex;justify-content:space-between}main{max-width:980px;margin:auto;padding:20px}.card{background:rgba(255,255,255,0.02);padding:18px;border-radius:12px}.btn{background:#d4af37;color:#3a0a0a;padding:10px 12px;border-radius:8px;border:none}.muted{color:#f0dca6}</style></head><body>
+  <header><div style="font-weight:700">CIEW — Institutes</div><nav><a href="index.html">Home</a> • <a href="verify.html">Verify</a></nav></header>
+  <main>
+    <div class="card">
+      <h1>Partner with CIEW</h1>
+      <p class="muted">Become an Authorized Verification Center and support fresher and experienced IT engineers by performing physical verification and enabling their professional identity.</p>
+
+      <h3>Benefits for Institutes</h3>
+      <ul>
+        <li>Revenue share for verification tasks and partner programs</li>
+        <li>Official "CIEW Authorized Verification Center" certificate & badge</li>
+        <li>Priority access to CIEW training content and placement drives</li>
+        <li>Listed on CIEW partner map & city page</li>
+      </ul>
+
+      <h3>How it works</h3>
+      <ol>
+        <li>Institute signs partnership agreement and receives login credentials</li>
+        <li>Engineer visits center for physical document check</li>
+        <li>Institute uploads scans, selfie and marks physical verification</li>
+        <li>CIEW pays partner commissions and provides partner support</li>
+      </ol>
+
+      <h3>Sign up your institute</h3>
+      <form onsubmit="alert('Demo: partner signup');return false;">
+        <input placeholder="Institute name" required />
+        <input placeholder="Owner name" required />
+        <input placeholder="Mobile" required />
+        <input placeholder="Email" required />
+        <input placeholder="City" required />
+        <button class="btn">Apply as Partner</button>
+      </form>
+
+      <h3 style="margin-top:12px">Partner Programs</h3>
+      <p class="muted">Onboarding is immediate; partner tiers include data-collection partner, verification center and mentor partners. Partners receive training and a partner dashboard.</p>
+
+      <h3 style="margin-top:12px">Contact</h3>
+      <p class="muted">WhatsApp: <a href="https://chat.whatsapp.com/LzjAqRFLI0oBWcrVgbot8i">Join community</a></p>
+    </div>
+  </main>
+</body></html>
+
+
+<!-- File: membership.html -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>Memberships — CIEW</title>
+  <style>body{font-family:Inter,system-ui;background:#200101;color:#fff6e6;margin:0}header{padding:14px 20px;display:flex;justify-content:space-between}main{max-width:980px;margin:auto;padding:20px}.card{background:rgba(255,255,255,0.02);padding:18px;border-radius:12px}.muted{color:#f0dca6}.tier{border-radius:10px;padding:12px;background:#3a0a0a;margin-bottom:12px}</style></head><body>
+  <header><div style="font-weight:700">CIEW — Memberships</div><nav><a href="index.html">Home</a> • <a href="about.html">About</a></nav></header>
+  <main>
+    <div class="card">
+      <h1>Membership Types & Benefits</h1>
+      <p class="muted">Choose the membership that fits your career stage. (Fees are not shown here.)</p>
+
+      <div class="tier">
+        <h3>Associate Member (Freshers / Early Career)</h3>
+        <ul>
+          <li>Lifetime CIEW professional ID and QR-enabled verification report</li>
+          <li>Adaptive skill assessments and basic employability score</li>
+          <li>Access to CIEW bootcamps and mentorship circles (competitive selection)</li>
+          <li>Priority listing for campus and entry-level hiring</li>
+          <li>Access to learning discounts and partner offers</li>
+        </ul>
+      </div>
+
+      <div class="tier">
+        <h3>Professional Member (Mid-level / Experienced IT Engineers)</h3>
+        <ul>
+          <li>All Associate benefits</li>
+          <li>Advanced skill mapping and leadership tracks</li>
+          <li>Eligibility for role-based licenses and governance roles</li>
+          <li>Priority invites to pilot projects and national initiatives</li>
+          <li>Mentorship and industry networking</li>
+        </ul>
+      </div>
+
+      <div class="tier">
+        <h3>Fellow / Chartered Member (Senior / Leaders)</h3>
+        <ul>
+          <li>All Professional benefits</li>
+          <li>Eligibility for governance seats, reviewer roles and advisory panels</li>
+          <li>Recognition in national registers and public directories</li>
+          <li>Access to policy consults, industry roundtables and high-value placements</li>
+          <li>Opportunities to mentor, certify and lead CIEW bootcamps</li>
+        </ul>
+      </div>
+
+      <h3 style="margin-top:12px">How to choose</h3>
+      <p class="muted">Select Associate if you are starting your career, Professional if you have industry experience and want role growth, and Fellow if you are a senior professional or leader ready to contribute to governance and mentoring.</p>
+
+    </div>
+  </main>
+</body></html>
+
+
+<!-- File: licenses.html -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>Licenses — CIEW</title>
+  <style>body{font-family:Inter,system-ui;background:#200101;color:#fff6e6;margin:0}header{padding:14px 20px;display:flex;justify-content:space-between}main{max-width:980px;margin:auto;padding:20px}.card{background:rgba(255,255,255,0.02);padding:18px;border-radius:12px}.muted{color:#f0dca6}.license{border-radius:10px;padding:12px;background:#3a0a0a;margin-bottom:12px}</style></head><body>
+  <header><div style="font-weight:700">CIEW — Licenses</div><nav><a href="index.html">Home</a> • <a href="membership.html">Memberships</a></nav></header>
+  <main>
+    <div class="card">
+      <h1>CIEW Professional Licenses</h1>
+      <p class="muted">CIEW issues role-based professional licenses that validate real-world skills, responsibilities and accountability. Licenses are awarded after verification, assessment and practical evaluation through bootcamps or employer-validated projects.</p>
+
+      <div class="license">
+        <h3>Software Developer License</h3>
+        <p class="muted">For professionals demonstrating coding proficiency, system design, code quality, and delivery in real projects. Holders are certified to lead software development tasks, contribute to architecture, and mentor junior developers. Assessment includes code challenge, design interview and portfolio evaluation.</p>
+      </div>
+
+      <div class="license">
+        <h3>Service Desk & Systems / Network Administration License</h3>
+        <p class="muted">For professionals managing enterprise support, system uptime, network operations and incident response. Holders demonstrate practical troubleshooting, configuration management, and adherence to SLAs. Assessment includes lab simulations, ticket-handling scenarios and operational audits.</p>
+      </div>
+
+      <div class="license">
+        <h3>Cyber Security Professional License</h3>
+        <p class="muted">For professionals in security operations, threat hunting, secure architecture and incident response. Holders demonstrate secure coding awareness, pentesting basics, SOC workflows and risk management. Assessment includes capture-the-flag labs, incident case studies and live simulations.</p>
+      </div>
+
+      <h3 style="margin-top:12px">Bootcamps: Fast-track to License</h3>
+      <p class="muted">CIEW bootcamps are intensive, cohort-based programs designed to convert verified fresher and experienced IT engineers into license-eligible professionals. Bootcamps combine live instruction, hands-on labs, employer projects and mentor reviews. Seats are competitive and limited to ensure quality.</p>
+
+      <h3 style="margin-top:8px">Bootcamp Highlights</h3>
+      <ul class="muted">
+        <li>Small cohorts, mentor-to-member ratio focused</li>
+        <li>Employer-vetted projects as part of assessment</li>
+        <li>Live simulations, labs and recorded sessions</li>
+        <li>Priority placement pipelines for top performers</li>
+        <li>Direct pathway to role-based CIEW license</li>
+      </ul>
+
+      <h3 style="margin-top:12px">Why get a CIEW License?</h3>
+      <ul class="muted">
+        <li>Recognized professional status within India’s IT ecosystem</li>
+        <li>Employer trust — validated skills & accountability</li>
+        <li>Access to leadership roles and specialized projects</li>
+        <li>Priority listing on CIEW employer search</li>
+      </ul>
+
+    </div>
+  </main>
+</body></html>
+
+
+<!-- File: join.html -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>Join CIEW — Programs & Benefits</title>
+  <style>body{font-family:Inter,system-ui;background:#200101;color:#fff6e6;margin:0}header{padding:14px 20px;display:flex;justify-content:space-between}main{max-width:980px;margin:auto;padding:20px}.card{background:rgba(255,255,255,0.02);padding:18px;border-radius:12px}.btn{background:#d4af37;color:#3a0a0a;padding:10px 12px;border-radius:8px;border:none}.muted{color:#f0dca6}table{width:100%;border-collapse:collapse}td,th{padding:10px;border-bottom:1px solid rgba(255,255,255,0.03)}.note{font-size:13px;color:#f0dca6}</style></head><body>
+  <header><div style="font-weight:700">CIEW — Join</div><nav><a href="index.html">Home</a> • <a href="about.html">About</a></nav></header>
+  <main>
+    <div class="card">
+      <h1>Programs & Benefits</h1>
+      <p class="muted">Complete professional lifecycle — registration, verification, assessments, interviews, memberships and premium career services.</p>
+
+      <h3>Core Benefits for Fresher & Experienced IT Engineers</h3>
+      <ul>
+        <li>Lifetime professional CIEW ID and QR-enabled verification report</li>
+        <li>Verified academic credentials (10th/12th/Graduation) and consolidated profile</li>
+        <li>Adaptive employability assessments and skill scorecards</li>
+        <li>Recorded interview profile (technical + HR) for recruiters</li>
+        <li>Priority access to vetted employers and placement drives</li>
+        <li>Mentorship from senior IT professionals and leadership tracks</li>
+        <li>Welfare support: emergency funds, scholarship access and unemployment assistance programs</li>
+        <li>Discounts on partner services: certifications, tools, cloud credits</li>
+      </ul>
+
+      <div style="margin-top:12px" class="card">
+        <h3 style="margin:0">How to enroll</h3>
+        <ol class="muted">
+          <li>Create free profile → Get your CIEW ID</li>
+          <li>Visit an authorized verification center for document checks and consolidation</li>
+          <li>Take adaptive assessments to receive a CIEW skill score</li>
+          <li>Attend recorded interviews and apply to CIEW-vetted job pools</li>
+          <li>Join premium programs for additional placement support and welfare benefits</li>
+        </ol>
+        <div style="margin-top:12px"><a class="btn" href="https://forms.gle/GAjeBmT6co1dmKM27">Register Now</a></div>
+      </div>
+
+      <div style="margin-top:12px" class="card">
+        <h3>Support & Contacts</h3>
+        <p class="muted">WhatsApp community: <a class="link" href="https://chat.whatsapp.com/LzjAqRFLI0oBWcrVgbot8i">Join</a><br/>Email: contact@ciew.org (placeholder)</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
+
+
+<!-- File: members.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Members & Partners — CIEW</title>
+  <style>
+    body{font-family:Inter,system-ui;background:#200101;color:#fff6e6;margin:0}
+    header{padding:14px 20px;display:flex;justify-content:space-between}
+    main{max-width:1100px;margin:auto;padding:20px}
+    .card{background:rgba(255,255,255,0.02);padding:18px;border-radius:12px;margin-bottom:12px}
+    h1{color:#d4af37}
+    .muted{color:#f0dca6}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    ul{margin:8px 0 0 18px}
+    .logo-row{display:flex;flex-wrap:wrap;gap:10px}
+    .pill{background:#3a0a0a;padding:8px 12px;border-radius:999px;color:#fff6e6}
+  </style>
+</head>
+<body>
+  <header><div style="font-weight:700">CIEW — Members & Partners</div><nav><a href="index.html">Home</a> • <a href="about.html">About</a></nav></header>
+  <main>
+    <div class="card">
+      <h1>Our Members & Partner Organizations</h1>
+      <p class="muted">CIEW works with a diverse ecosystem of IT companies, colleges, universities and training institutes. Below is a curated list of member organisations and institutional partners — we will keep this list updated as partnerships grow.</p>
+    </div>
+
+    <div class="card">
+      <h2>Major IT Company Members</h2>
+      <p class="muted">Below are our partner companies grouped by category. Logos will be displayed for confirmed partners; text placeholders show representative organisations. If your organisation is a partner and you'd like a logo displayed, contact partnerships@ciew.org</p>
+
+      <h4 style="margin-top:12px">Indian IT & Services</h4>
+      <div class="logo-row" style="margin-bottom:10px">
+        <div class="pill">Tata Consultancy Services (TCS)</div>
+        <div class="pill">Infosys</div>
+        <div class="pill">Wipro</div>
+        <div class="pill">HCLTech</div>
+        <div class="pill">Tech Mahindra</div>
+        <div class="pill">LTI / LTIMindtree</div>
+        <div class="pill">Cognizant India</div>
+        <div class="pill">Mindtree</div>
+        <div class="pill">Mphasis</div>
+        <div class="pill">Persistent Systems</div>
+        <div class="pill">Nagarro</div>
+        <div class="pill">Hexaware</div>
+        <div class="pill">Zensar</div>
+      </div>
+
+      <h4 style="margin-top:12px">Global MNCs (India Presence)</h4>
+      <div class="logo-row" style="margin-bottom:10px">
+        <div class="pill">Accenture</div>
+        <div class="pill">IBM</div>
+        <div class="pill">Capgemini</div>
+        <div class="pill">Microsoft</div>
+        <div class="pill">Google</div>
+        <div class="pill">Amazon</div>
+        <div class="pill">Oracle</div>
+        <div class="pill">SAP</div>
+        <div class="pill">Cisco</div>
+        <div class="pill">Dell Technologies</div>
+        <div class="pill">Intel</div>
+        <div class="pill">Nvidia</div>
+        <div class="pill">Qualcomm</div>
+      </div>
+
+      <h4 style="margin-top:12px">Product Companies & Startups</h4>
+      <div class="logo-row" style="margin-bottom:10px">
+        <div class="pill">Zoho</div>
+        <div class="pill">Freshworks</div>
+        <div class="pill">Razorpay</div>
+        <div class="pill">Pine Labs</div>
+        <div class="pill">MakeMyTrip</div>
+        <div class="pill">Swiggy</div>
+        <div class="pill">Zomato</div>
+        <div class="pill">Flipkart</div>
+        <div class="pill">Byju's</div>
+        <div class="pill">PolicyBazaar</div>
+      </div>
+
+      <h4 style="margin-top:12px">Fintech & Payment Tech</h4>
+      <div class="logo-row" style="margin-bottom:10px">
+        <div class="pill">Paytm</div>
+        <div class="pill">PhonePe</div>
+        <div class="pill">Razorpay</div>
+        <div class="pill">BharatPe</div>
+        <div class="pill">MobiKwik</div>
+      </div>
+
+      <h4 style="margin-top:12px">Consulting & Professional Services (Tech Divisions)</h4>
+      <div class="logo-row" style="margin-bottom:10px">
+        <div class="pill">Deloitte (Tech)</div>
+        <div class="pill">PwC (Tech)</div>
+        <div class="pill">EY (Tech)</div>
+        <div class="pill">KPMG (Tech)</div>
+      </div>
+
+      <h4 style="margin-top:12px">Global-only Tech Firms (Representative)</h4>
+      <div class="logo-row" style="margin-bottom:10px">
+        <div class="pill">Meta (Facebook)</div>
+        <div class="pill">Apple</div>
+        <div class="pill">Uber</div>
+        <div class="pill">Airbnb</div>
+        <div class="pill">Salesforce</div>
+        <div class="pill">Stripe</div>
+        <div class="pill">Twitter / X</div>
+        <div class="pill">LinkedIn</div>
+      </div>
+
+      <p class="muted" style="margin-top:10px">Note: This is a representative list. Partnerships are formalised through MoUs and displayed with explicit consent from organisations.</p> This is a representative list. Partnerships are formalised through MoUs and displayed with explicit consent from organisations.</p>
+    </div>
+
+    <div class="card">
+      <h2>Colleges & Universities (Representative)</h2>
+      <div class="grid">
+        <div>
+          <h4>National Institutes</h4>
+          <ul>
+            <li>IIT Kanpur</li>
+            <li>IIT Roorkee</li>
+            <li>IIT Delhi</li>
+            <li>NIT Allahabad (Motilal Nehru)</li>
+            <li>IIITs (selected campuses)</li>
+            <li>Delhi University (select colleges)</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Regional & Private Colleges</h4>
+          <ul>
+            <li>Banaras Hindu University (BHU)</li>
+            <li>Lucknow University</li>
+            <li>Amity University (Lucknow/Noida)</li>
+            <li>Galgotias University</li>
+            <li>AKTU-affiliated colleges (Uttar Pradesh region)</li>
+            <li>Local polytechnics and computer institutes (city partners)</li>
+          </ul>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:10px">Colleges and universities join CIEW as institutional partners to bulk-upload alumni data, participate in placement drives and enable campus bootcamps.</p>
+    </div>
+
+    <div class="card">
+      <h2>Training & Bootcamp Partners</h2>
+      <ul>
+        <li>NIIT (regional centres)</li>
+        <li>Aptech (regional centres)</li>
+        <li>Local certified computer institutes (city-level partners)</li>
+        <li>Open-source community groups and coding clubs</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Global Comparison & Unique Positioning</h2>
+      <p class="muted">Globally, professional registries and councils (eg. NMC for medical professionals, BCI for law, WES for credential evaluation) focus on either verification, licensing or career services. CIEW combines these functions into a single platform specialized for IT professionals — verification, role-based licensing, bootcamps, employer API and welfare — making it uniquely tailored to India’s IT ecosystem.</p>
+      <ul class="muted">
+        <li>Focused vertical: IT profession only — higher accuracy and relevance</li>
+        <li>Three-layer verification (physical + DigiLocker/API + institutional sign-off)</li>
+        <li>Role-based licenses mapped to real employer responsibilities</li>
+        <li>Bootcamps designed in partnership with employers to convert verified members into license-eligible professionals</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Want your organisation listed?</h2>
+      <p class="muted">If your company, college or institute is already a partner or you wish to join the CIEW ecosystem, please contact partnerships@ciew.org. All partner listings are published after receiving a formal agreement or consent.</p>
+    </div>
+  </main>
+</body>
+</html>
